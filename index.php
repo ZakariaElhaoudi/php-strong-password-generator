@@ -10,6 +10,7 @@
 
         <?php 
             include "functions.php"; 
+            header('Location: ./header.php');
         ?>
 
    <style>
