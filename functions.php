@@ -18,6 +18,7 @@ function generatePassword() {
                $randomChars = mt_rand(0, strlen($chars) - 1);
                $password .= $chars[$randomChars];
            }
+           return $password;
        } 
     }
-   ?>
+?>
