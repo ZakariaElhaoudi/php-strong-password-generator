@@ -1,6 +1,6 @@
 <?php
 
-    session_start();
+function generatePassword() {
 
        if (isset($_GET["generate"])) {
            $passwordLength = intval($_GET["passwordLength"]);
@@ -18,10 +18,6 @@
                $randomChars = mt_rand(0, strlen($chars) - 1);
                $password .= $chars[$randomChars];
            }
-
-           $_SESSION['password'] = $password;
-
-       } else {
-            echo "La lunghezza della password deve essere maggiore di zero.";
-       }
+       } 
+    }
    ?>

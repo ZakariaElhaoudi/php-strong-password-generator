@@ -9,7 +9,11 @@
 
 
         <?php 
+            session_start();
+
             include "functions.php"; 
+            generatePassword();
+           $_SESSION['password'] = generatePassword() ;
             header('Location: ./header.php');
         ?>
 
