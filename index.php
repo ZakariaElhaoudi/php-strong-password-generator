@@ -12,8 +12,8 @@
             session_start();
 
             include "functions.php"; 
-            generatePassword();
-           $_SESSION['password'] = generatePassword() ;
+             $generate = generatePassword();
+           $_SESSION['password'] = $generate ;
             header('Location: ./header.php');
         ?>
 
